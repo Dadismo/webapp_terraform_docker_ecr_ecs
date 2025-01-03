@@ -51,8 +51,6 @@ resource "aws_route_table_association" "private_data_subnet_az1_rt_az1_associati
   route_table_id = aws_route_table.private_routetable_az1.id
 }
 
-
-
 # associate private app subnet az2 with private route table az1
 resource "aws_route_table_association" "private_app_subnet_az2_rt_az2_association" {
   subnet_id      = aws_subnet.private_eligantdata_subnet_az1.id
